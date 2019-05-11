@@ -1,0 +1,9 @@
+{
+  "extends": "eslint-config-airbnb",
+  "rules": {
+    "react/jsx-filename-extension": 0,
+    "quotes": 0,
+    "semi": 0,
+    "react/prefer-stateless-function": 0
+  }
+}
