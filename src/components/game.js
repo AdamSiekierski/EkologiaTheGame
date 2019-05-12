@@ -1,16 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const GameWrapper = styled.div`
-  height: 100vh;
-  width: 5760px;
-`
+import GameWrapper from './gameWrapper'
 
 class Game extends React.Component {
   render() {
     return (
       <GameWrapper>
-        <h1>Game</h1>
+        <h1>Ekologia the game</h1>
       </GameWrapper>
     )
   }
