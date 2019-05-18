@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "babel-plugin-styled-components": "^1.10.0",
     "eslint-config-airbnb": "^17.1.0",
     "gatsby": "^2.4.2",
@@ -19,7 +20,9 @@
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-transformer-sharp": "^2.1.19",
     "intersection-observer": "^0.7.0",
+    "lodash.debounce": "^4.0.8",
     "prop-types": "^15.7.2",
+    "random": "^2.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
@@ -37,6 +40,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "develop-m": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "gatsby develop",
     "serve": "gatsby serve",

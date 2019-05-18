@@ -4,8 +4,8 @@ import { graphql, StaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 
 const StyledBackgroundImage = styled(BackgroundImage)`
-  width: 5750px;
-  height: 100vh;
+  height: 100vh !important;
+  display: block !important;
 `
 
 const gameWrapper = (props) => (
@@ -14,7 +14,7 @@ const gameWrapper = (props) => (
       query {
         image: file(relativePath: { eq: "bg.png" }) {
           childImageSharp {
-            fixed(width: 5750, height: 1080) {
+            fixed(width: 5750) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -23,7 +23,7 @@ const gameWrapper = (props) => (
     `}
     render={
       data => (
-        <StyledBackgroundImage fluid={data.image.childImageSharp.fixed}>
+        <StyledBackgroundImage fixed={data.image.childImageSharp.fixed}>
           { props.children }
         </StyledBackgroundImage>
       )
@@ -33,8 +33,7 @@ const gameWrapper = (props) => (
 
 const StyledGameWrapper = styled(gameWrapper)`
   width: 5750px;
-  height: 100vh !important;
-  background-position: center;
+  height: 100vh;
 `
 
 export default StyledGameWrapper

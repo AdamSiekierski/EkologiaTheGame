@@ -1,0 +1,65 @@
+[
+  {
+    "question": "Kto to roślinożerca?",
+    "a": "Zwierzę jedzące tylko rośliny",
+    "b": "Zwierzę jedzące tylko mięso",
+    "c": "Gatunek żaby",
+    "valid": "a"
+  },
+  {
+    "question": "Co robi pancernik gdy widzi zagrożenie?",
+    "a": "Zwija się w kulę",
+    "b": "Ucieka jak najdalej",
+    "c": "Udaje martwego",
+    "valid": "a"
+  },
+  {
+    "question": "Jak nazywamy proces odzysku materiałów ze śmieci?",
+    "a": "Segregacja",
+    "b": "Recykling",
+    "c": "Powtórna obróbka",
+    "valid": "b"
+  },
+  {
+    "question": "Czym jest kwaśny deszcz?",
+    "a": "Nazwa substancji chemicznej",
+    "b": "Kąpiel w Kapuśniaku",
+    "c": "Rodzaj opadów atmosferycznych",
+    "valid": "c"
+  },
+  {
+    "question": "Co to śmiertelność w populacji?",
+    "a": "Stosunek osobników umierających do rodzących się",
+    "b": "Osobniki ubywające na skutek śmierci",
+    "c": "Średnia wieku w którym umierają osobniki",
+    "valid": "b"
+  },
+  {
+    "question": "Co to rozrodczość w populacji?",
+    "a": "Stosunek osobników rodzących się do umierających",
+    "b": "Wiek w którym większość osobników uzyskało potomstwo",
+    "c": "Osobniki przybywające w wyniku rozrodu",
+    "valid": "c"
+  },
+  {
+    "question": "Czym jest imigracja w populacji?",
+    "a": "Wędrówka osobników",
+    "b": "Osobniki przybywające z innych populacji",
+    "c": "Osobniki odchodzące do innych populacji",
+    "valid": "b"
+  },
+  {
+    "question": "Co to emigracja w populacji?",
+    "a": "Osobniki odchodzące do innych populacji",
+    "b": "Wędrówka osobników",
+    "c": "Osobniki przybywające z innych populacji",
+    "valid": "a"
+  },
+  {
+    "question": "Czym jest nisza ekologiczna?",
+    "a": "Inaczej zakres tolerancji ekologicznej",
+    "b": "Wszystkie wymagania organizmu względem środowiska ",
+    "c": "Region na którym istnieje dany ekosystem",
+    "valid": "b"
+  }
+]
