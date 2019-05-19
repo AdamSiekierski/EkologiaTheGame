@@ -6,6 +6,10 @@ import Window from './windowTemplate'
 
 import questions from '../assets/questions'
 
+const StyledWindow = styled(Window)`
+  opacity: 0.95;
+`
+
 const WindowWrapper = styled.div`
   position: fixed;
   width: 100vw;
@@ -89,14 +93,14 @@ class Question extends React.Component {
     if (this.state.isVisible) {
       return (
         <WindowWrapper>
-          <Window title={`Pytanie dla gracza ${this.state.player}`}>
+          <StyledWindow title={`Pytanie dla gracza ${this.state.player}`}>
             <QuestionWrapper>
               <h3>{ questions[this.state.questionNumber].question }</h3>
               <QuestionAnswer type="button" onClick={() => this.verifyAnswer('a')} color={this.state.colorA}>A: { questions[this.state.questionNumber].a }</QuestionAnswer>
               <QuestionAnswer type="button" onClick={() => this.verifyAnswer('b')} color={this.state.colorB}>B: { questions[this.state.questionNumber].b }</QuestionAnswer>
               <QuestionAnswer type="button" onClick={() => this.verifyAnswer('c')} color={this.state.colorC}>C: { questions[this.state.questionNumber].c }</QuestionAnswer>
             </QuestionWrapper>
-          </Window>
+          </StyledWindow>
         </WindowWrapper>
       )
     } else {

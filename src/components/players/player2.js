@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import GameContext from '../../utils/gameContext'
-import Player2Image from '../../images/player2.png'
-import squares from '../../assets/squares'
+import random from "random"
+
 import Question from "../question"
+import Player2Image from '../../images/player2.png'
+
+import GameContext from '../../utils/gameContext'
+import squares from '../../assets/squares'
 
 const StyledPlayerImage = styled.img`
   z-index: 10;
@@ -37,11 +40,10 @@ class PlayerTwo extends React.Component {
         this.question.current.show(2);
         break
       case 'back':
-        setTimeout(() => this.props.back(4), 1000)
-        this.props.continue(null);
+        setTimeout(() => this.props.back(random.int(2, 4)), 1000)
         break
       default:
-        this.props.continue(null);
+        this.props.continue();
         break
     }
   }
@@ -51,8 +53,7 @@ class PlayerTwo extends React.Component {
   }
 
   wrongQuestionAnswer() {
-    this.props.back(3)
-    this.props.continue();
+    this.props.back(3);
   }
 
   render() {

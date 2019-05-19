@@ -6,6 +6,7 @@ import Square from "./sqare"
 import PlayerOne from './players/player1'
 import PlayerTwo from './players/player2'
 import PlayerStatus from './players/playersStatus'
+import WinnerScreen from './winnerScreen'
 
 import squares from '../assets/squares'
 import GameContext from '../utils/gameContext'
@@ -25,6 +26,7 @@ class Game extends React.Component {
       player1Location: 0,
       player2Location: 0,
       isReadyForNext: true,
+      winner: null,
 
       makeAPlayerMove: () => {
         const i = random.int(1, 3)
@@ -64,13 +66,19 @@ class Game extends React.Component {
   }
 
   continue() {
-    this.setState(state => {
-      const player = state.playerTurn === 1 ? 2 : 1
-      return ({
-        isReadyForNext: true,
-        playerTurn: player,
+    if (this.state.player1Location === 49) {
+      setTimeout(() => this.setState({ winner: 1 }), 1000);
+    } else if (this.state.player2Location === 49) {
+      setTimeout(() => this.setState({ winner: 2 }), 1000);
+    } else {
+      this.setState(state => {
+        const player = state.playerTurn === 1 ? 2 : 1
+        return ({
+          isReadyForNext: true,
+          playerTurn: player,
+        })
       })
-    })
+    }
   }
 
   goBack(player, n) {
@@ -79,12 +87,16 @@ class Game extends React.Component {
         this.setState(state => {
           const corrected = state.player1Location - n;
           return ({ player1Location: corrected })
+        }, () => {
+          this.playerOne.current.handleLocationChange(this.state);
         })
         break
       case 2:
         this.setState(state => {
           const corrected = state.player2Location - n;
           return ({ player2Location: corrected })
+        }, () => {
+          this.playerTwo.current.handleLocationChange(this.state);
         })
         break
       default:
@@ -103,6 +115,9 @@ class Game extends React.Component {
           }
           <PlayerStatus />
         </GameWrapper>
+        {
+          this.state.winner && <WinnerScreen player={this.state.winner} />
+        }
       </GameContext.Provider>
     )
   }

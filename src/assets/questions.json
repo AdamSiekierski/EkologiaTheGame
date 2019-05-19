@@ -61,5 +61,124 @@
     "b": "Wszystkie wymagania organizmu względem środowiska ",
     "c": "Region na którym istnieje dany ekosystem",
     "valid": "b"
+  },
+  {
+    "question": "Zależność, w której oba gatunki są stratne to:",
+    "a": "Konkurencja",
+    "b": "Komensalizm",
+    "c": "Mutualizm",
+    "valid": "a"
+  },
+  {
+    "question": "Protisty wchodzą w skład:",
+    "a": "Biotopu",
+    "b": "Siedliska",
+    "c": "Biocenozy",
+    "valid": "c"
+  },
+  {
+    "question": "Łańcuch spalania to…",
+    "a": "Łańcuch pokarmowy, którego pierwszym ogniwem są producenci",
+    "b": "Łańcuch pokarmowy, w którym musi znaleźć się destruent.",
+    "c": "Łańcuch pokarmowy, w którym nie uczestniczy producent",
+    "valid": "a"
+  },
+  {
+    "question": "Który z wymienionych rodzajów struktur przestrzennych jest niepoprawny?",
+    "a": "Rozmieszczenie losowe",
+    "b": "Rozmieszczenie stadowe",
+    "c": "Rozmieszczenie równomierne",
+    "valid": "b"
+  },
+  {
+    "question": "Co to jest siedlisko?",
+    "a": "Obszar zamieszkiwany przez dany organizm",
+    "b": "Obszar o żyznej glebie",
+    "c": "Obszar niezdatny do życia",
+    "valid": "a"
+  },
+  {
+    "question": "Co to jest sukcesja?",
+    "a": "Prawidłowe rozwijanie się gleby",
+    "b": "Proces stopniowych zmian ekosystemu",
+    "c": "Nadmierna wycinka drzew",
+    "valid": "a"
+  },
+  {
+    "question": "Który z wymienionych ekosystemów jest błędny?",
+    "a": "Ekosystem naturalny",
+    "b": "Ekosystem sztuczny",
+    "c": "Ekosystem miejski",
+    "valid": "c"
+  },
+  {
+    "question": "Co to jest ekosystem?",
+    "a": "Ekologiczny system operacyjny",
+    "b": "Zbiór elementów ożywionych i nieożywionych, które wzajemnie na siebie wpływają",
+    "c": "Dziedzina naukowa",
+    "valid": "b"
+  },
+  {
+    "question": "Co to protokooperacja?",
+    "a": "Współzależność między dwoma gatunkami, która przynosi korzyści obu stronom, ale nie jest konieczna do ich przeżycia",
+    "b": "Ścisły związek między dwoma gatunkami, który przynosi korzyści obu stronom i jest konieczny do ich przeżycia",
+    "c": "Związek, w którym jedna strona zyskuje a druga traci",
+    "valid": "a"
+  },
+  {
+    "question": "Który z wymienionych pasożytów zalicza się do pasożytów zewnętrznych?",
+    "a": "Owsiki",
+    "b": "Tasiemiec",
+    "c": "Pchły",
+    "valid": "c"
+  },
+  {
+    "question": "Jak mak broni się przed zjedzeniem?",
+    "a": "Upodabnia się do pokrzywy",
+    "b": "Wytwarza związki chemiczne o odstraszającym zapachu",
+    "c": "Wytwarza kolce",
+    "valid": "b"
+  },
+  {
+    "question": "Które z wymienionych organizmów łączy mutualizm obligatoryjny",
+    "a": "Koźlarz i brzoza",
+    "b": "Koza i owca",
+    "c": "Rekin i podnawki",
+    "valid": "a"
+  },
+  {
+    "question": "Co to jest biocenoza?",
+    "a": "Zbiór elementów nieożywionych, które budują ekosystem",
+    "b": "Zbiór elementów ożywionych, które budują ekosystem",
+    "c": "Odmienność genetyczna wśród zwierząt",
+    "valid": "b"
+  },
+  {
+    "question": "Czy organizm potrafi przetrwać bez wody?",
+    "a": "Tak",
+    "b": "Nie",
+    "c": "Są wyjątki",
+    "valid": "b"
+  },
+  {
+    "question": "Co to jest Ekologia?",
+    "a": "Segregowanie śmieci",
+    "b": "Komunikacja za pomocą słuchu",
+    "c": "Nauka zajmująca się badaniem powiązań między różnymi gatunkami organizmów, a także powiązaniami organizmów ze środowiskiem, które zamieszkują",
+    "valid": "c"
+  },
+  {
+    "question": "Umięśnione kończyny dolne służą do...",
+    "a": "Szybkiego poruszania się",
+    "b": "Dalekich skoków",
+    "c": "Odpowiedzi A i B są poprawne",
+    "valid": "c"
+  },
+  {
+    "question": "Czym jest selekcja naturalna?",
+    "a": "Mechanizm ewolucji prowadzący do zmian w populacji zwiększających ich przystosowanie do warunków środowiskowych.",
+    "b": "Wybieranie tylko produktów eko podczas zakupów",
+    "c": "Żadna z powyższych odpowiedzi nie jest poprawna",
+    "valid": "a"
   }
 ]

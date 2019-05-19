@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import random from 'random'
 
 import Question from '../question'
 
@@ -39,8 +40,7 @@ class PlayerOne extends React.Component {
         this.question.current.show(1);
         break
       case 'back':
-        setTimeout(() => this.props.back(4), 1000)
-        this.props.continue();
+        setTimeout(() => this.props.back(random.int(2, 4)), 1000)
         break
       default:
         this.props.continue();
