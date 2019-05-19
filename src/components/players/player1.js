@@ -52,8 +52,7 @@ class PlayerOne extends React.Component {
   }
 
   wrongQuestionAnswer() {
-    this.props.back(3)
-    this.props.continue();
+    this.props.back(3);
   }
 
   render() {
