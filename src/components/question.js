@@ -5,6 +5,7 @@ import random from 'random'
 import Window from './windowTemplate'
 
 import questions from '../assets/questions'
+import questionsAsked from '../utils/questionsAsked'
 
 const StyledWindow = styled(Window)`
   opacity: 0.95;
@@ -36,6 +37,7 @@ const QuestionAnswer = styled.button`
   background-color: ${props => props.color};
   padding: 3px;
   width: 90%;
+  cursor: pointer;
 `
 
 class Question extends React.Component {
@@ -56,8 +58,19 @@ class Question extends React.Component {
   }
 
   show(player) {
+    let question = random.int(0, questions.length - 1);
+
+    if (questionsAsked.asked.includes(question)) {
+      question = 1;
+      while (questionsAsked.asked.includes(question)) {
+        question += 1
+      }
+    }
+
+    questionsAsked.add(question)
+
     this.setState({
-      questionNumber: random.int(0, questions.length - 1),
+      questionNumber: question,
       isVisible: true,
       player,
     })

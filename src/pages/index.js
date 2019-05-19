@@ -28,6 +28,10 @@ const P = styled.p`
   text-align: justify;
 `
 
+const UL = styled.ul`
+  text-align: justify;
+`
+
 const StyledLink = styled(props => <Link {...props} />)`
   display: block;
   outline: none;
@@ -54,13 +58,12 @@ const IndexPage = () => (
       <h3>Zasady gry</h3>
       <P>1. Zadaniem graczy jest jak najszybsze dojście do mety.</P>
       <P>2. Gracze na zmianę losują ilość pól do przesunięcia, korzystając z {`"Maszyny losującej"`}. Losuje ona w zakresie 1 do 3.</P>
-      <P>3. Istnieją 3 rodzaje pól:
-        <ul>
-          <li>Zwykłe</li>
-          <li>Z pytaniem - po wejściu gracz odpowiada na pytanie. Jeżeli odpowie źle - cofa się o 3 pola. Jeżeli dobrze - gra kontynuowana jest normalnie</li>
-          <li>Cofające - po wejściu gracz cofa się o losową liczbę pól - od 2 do 4</li>
-        </ul>
-      </P>
+      <P>3. Istnieją 3 rodzaje pól:</P>
+      <UL>
+        <li>Zwykłe</li>
+        <li>Z pytaniem - po wejściu gracz odpowiada na pytanie. Jeżeli odpowie źle - cofa się o 3 pola. Jeżeli dobrze - gra kontynuowana jest normalnie</li>
+        <li>Cofające - po wejściu gracz cofa się o losową liczbę pól - od 2 do 4</li>
+      </UL>
       <P>4. Na końcu planszy znajduje się meta (ostatnie pole). Aby wygrać, gracz musi wylosować dokładną ilość pól pozostałych do mety. Jeżeli nie - zostaje w miejscu.</P>
       Życzymy dobrej zabawy!
     </Rules>

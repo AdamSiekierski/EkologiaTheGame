@@ -44,7 +44,7 @@ const WinnerScreen = (props) => (
     <h1>Wygrana</h1>
     <h3>Wygrał gracz {props.player}. Gratulacje!</h3>
     <StyledLink to="/"> Wróć do ekranu głównego </StyledLink>
-    <StyledLink onClick={() => window.location.reload()}> Zagraj jeszcze raz </StyledLink>
+    <StyledLink onClick={() => window.location.reload()} to="/game"> Zagraj jeszcze raz </StyledLink>
   </WinnerScreenWrapper>
 )
 
