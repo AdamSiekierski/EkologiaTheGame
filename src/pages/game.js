@@ -2,6 +2,7 @@ import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 
 import Game from '../components/game'
+import SEO from '../components/seo'
 
 const GlobalStyleProvider = createGlobalStyle`
   *, *::after, *::before {
@@ -13,6 +14,7 @@ const GlobalStyleProvider = createGlobalStyle`
 
 const GamePage = () => (
   <React.Fragment>
+    <SEO />
     <GlobalStyleProvider />
     <Game />
   </React.Fragment>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import SEO from '../components/seo'
 
 const IndexWrapper = styled.div`
   width: 100vw;
@@ -46,6 +47,7 @@ const StyledLink = styled(props => <Link {...props} />)`
 
 const IndexPage = () => (
   <IndexWrapper>
+    <SEO />
     <h1>Ekologia the Game</h1>
     Czyli sprawdzian z ekologii
     <Rules>

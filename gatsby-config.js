@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Ekologia The Game`,
+    description: `Najlepsza gra o ekologii`,
+    author: `AdamSiekierski`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,4 +28,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  pathPrefix: "/EkologiaTheGame",
 }
