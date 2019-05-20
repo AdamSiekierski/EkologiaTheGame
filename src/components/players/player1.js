@@ -9,7 +9,7 @@ import GameContext from '../../utils/gameContext'
 import squares from '../../assets/squares'
 
 const StyledPlayerImage = styled.img`
-  z-index: 10;
+  z-index: 2;
   transform: translate(25px, -10px) scale(0.7);
 `
 

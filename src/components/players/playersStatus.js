@@ -15,6 +15,13 @@ const StyledWindow = styled(Window)`
   position: fixed;
   width: 40vw;
   opacity: 0.9;
+  ${({ theme }) => theme.mq.small} {
+    width: 50vw;
+    height: 100vh;
+    right: 0;
+    transform: none;
+    opacity: 1;
+  }
 `
 
 const PlayerStatusHalf = styled.div`
@@ -25,12 +32,14 @@ const PlayerStatusHalf = styled.div`
   ${props => (props.left ? `border-right: 1px solid #824601` : `border-left: 1px solid #824601`)};
   text-align: center;
   table {
-    tr {
-      td {
-        text-align: center;
-        border: none;
-        width: 50%;
-        height: 20px;
+    tbody {
+      tr {
+        td {
+          text-align: center;
+          border: none;
+          width: 50%;
+          height: 20px;
+        }
       }
     }
   }

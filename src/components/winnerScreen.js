@@ -13,7 +13,7 @@ const WinnerScreenWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 15;
+  z-index: 5;
   animation: fadein 0.5s;
   opacity: 0.95;
   @keyframes fadein {

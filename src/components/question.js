@@ -7,10 +7,6 @@ import Window from './windowTemplate'
 import questions from '../assets/questions'
 import questionsAsked from '../utils/questionsAsked'
 
-const StyledWindow = styled(Window)`
-  opacity: 0.95;
-`
-
 const WindowWrapper = styled.div`
   position: fixed;
   width: 100vw;
@@ -20,12 +16,19 @@ const WindowWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 11;
+  z-index: 4;
+`
+
+const StyledWindow = styled(Window)`
+  opacity: 0.95;
+  width: 25vw;
+  ${({ theme }) => theme.mq.small} {
+    width: 90vw;
+  }
 `
 
 const QuestionWrapper = styled.div`
   padding: 5px;
-  width: 25vw;
   text-align: center;
 `
 

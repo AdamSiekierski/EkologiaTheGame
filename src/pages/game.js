@@ -1,8 +1,10 @@
 import React from 'react'
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import theme from '../assets/theme'
 
 import Game from '../components/game'
 import SEO from '../components/seo'
+import PhoneBlockade from '../components/phoneBlockade'
 
 const GlobalStyleProvider = createGlobalStyle`
   *, *::after, *::before {
@@ -15,8 +17,11 @@ const GlobalStyleProvider = createGlobalStyle`
 const GamePage = () => (
   <React.Fragment>
     <SEO />
+    <PhoneBlockade />
     <GlobalStyleProvider />
-    <Game />
+    <ThemeProvider theme={theme}>
+      <Game />
+    </ThemeProvider>
   </React.Fragment>
 )
 

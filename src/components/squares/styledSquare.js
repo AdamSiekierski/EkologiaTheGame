@@ -6,7 +6,7 @@ const StyledSquare = styled(Img)`
   position: absolute !important;
   top: ${props => props.y};
   left: ${props => props.x};
-  z-index: -10;
+  z-index: 1;
 `
 
 export default StyledSquare

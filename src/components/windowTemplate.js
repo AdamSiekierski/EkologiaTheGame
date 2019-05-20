@@ -6,7 +6,7 @@ const WindowWrapper = styled.div`
   background-color: #a57934;
   border: 1px solid #824601;
   border-radius: 2px;
-  z-index: 10;
+  z-index: 3;
 `
 
 const TitleBar = styled.div`
