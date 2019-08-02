@@ -29,7 +29,7 @@
     "react-helmet": "^5.2.1",
     "react-media": "^1.9.2",
     "react-typography": "^0.16.19",
-    "styled-components": "^4.2.0",
+    "styled-components": "^4.3.2",
     "typography": "^0.16.19"
   },
   "devDependencies": {
